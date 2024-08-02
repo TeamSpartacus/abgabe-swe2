@@ -1,0 +1,14 @@
+.main-header {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline 2px;
+}
+
+.main-content {
+  color: whitesmoke;
+  text-align: center;
+  margin: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+}

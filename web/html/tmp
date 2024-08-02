@@ -1,0 +1,197 @@
+:root {
+    /* global variables */
+    --main-background-color: #f4f4f4;
+    --main-color: #333;
+    --main-height: 10%;
+    --main-height-main: 80%;
+    --main-width: 100%;
+    --awi-blue: #00ABE8;
+    --awi-header-background-blue: #003E6E;
+}
+
+body {
+    height: 100svh; /* #pae Set the viwport height/width ; using s for the small viewport due to unrecognized items on moblie*/
+    width: 100svw;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, darkgrey, lightgrey);
+    box-sizing: border-box; /* #pae the box model ; the padding and border are included in the width and height */
+}
+
+.body-element-width {
+    width: var(--main-width); /* #pae usage of variables in css */
+}
+
+/* The three body elements / sections */
+
+.body-header {
+    height: var(--main-height);
+}
+
+.body-main {
+    height: var(--main-height-main);
+}
+
+.body-footer {
+    height: var(--main-height);
+}
+
+/* Diffrent Color plates for AWI */
+
+.awi-bg-light-blue {
+    background-color: var(--awi-blue);
+}
+
+.awi-bg-dark-blue {
+    background-color: var(--awi-header-background-blue);
+}
+
+.awi-text-blue {
+    color: var(--awi-blue);
+}
+
+/* Diffrent color schemes  */
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+
+/* General place containers */
+
+.flex-container {
+    display: flex; /* #pae the display manager set to a flexbox */
+    flex-direction: row; /* #pae align inside of the flexbox container set to row --> items will display in one row instead of default column */
+    flex-wrap: wrap; /* #pae sets the wrapping behavior ; set to wrap --> items will switch to next row if they shrink to much */
+    justify-content: space-evenly; /* #pae defines the placing inside the flexbox ; space will be split evenly between all items */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-item {
+    flex-basis: auto;
+    flex-shrink: 1; 
+    flex-grow: 1;
+}
+
+.grid-container { /* #pae currently not in use */
+    display: grid; /* #pae place items in a grid */
+    grid-template-columns: auto auto auto; /* #pae defines how many colums and there propety */
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* general header style */
+
+.header-div {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.header-logo{
+    object-fit: contain;
+}
+
+.header-profile-picutre{
+    object-fit: contain;
+    border-radius: 50%;
+    max-height: 50px;
+}
+
+.header-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* General item styles */
+
+.no_scroll {
+    overflow: hidden; /* #pae no scrolling */
+}
+
+.a-nostyles {
+    /* #pae give the a tag none of his default visual properties ; sets his color to default color */
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.list-style{
+    list-style-type: none; /* #pae no bulletpoits etc. */
+}
+
+.item-padding {
+    padding: 10px;
+}
+
+.item-margin {
+    margin: 10px;
+}
+
+.button{
+    border: var(--awi-blue) solid;
+    background-color: var(--awi-header-background-blue);
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+}
+
+/* the text colors have to stay last */
+
+.text-color-white {
+    color: #FFFFFF;
+}
+
+.text-color-black {
+    color: #333;
+}
+
+.button-color {
+    color: white;
+}
+/* Responisve behavior ; Stay last to overwrite the previous properties if nessessary*/
+
+@media screen and (max-width: 720px) {
+    body {
+        margin: 0;
+    }
+
+   .body-main {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        max-height: calc(100vh - 20%);
+    }
+
+   .body-header,.body-footer {
+        position: static;
+        top: 0; 
+        bottom: 0;
+    }
+
+   .body-element-width {
+        width: 100%;
+    }
+
+   .flex-container {
+        flex-direction: column; 
+    }
+}
+
+
+
+/* Testing Properties */
+
+.border {
+    border: 1px solid black;
+}

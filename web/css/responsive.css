@@ -1,0 +1,52 @@
+@media screen and (max-width: 768px) {
+  /* Header Main Footer */
+
+  header,
+  footer {
+    height: var(--main-height-mobile);
+  }
+
+  main {
+    height: var(--main-height-main-mobile);
+  }
+
+  header,
+  main,
+  footer {
+    width: var(--main-width-mobile);
+  }
+
+  /* Place Containers */
+
+  .flex-container-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .flex-container-column {
+    display: flex;
+    height: 100%;
+  }
+
+  /* Flexbox Attributes */
+
+  .flex-container-items-center {
+    align-items: center;
+  }
+
+  .flex-container-items-center-justify {
+    justify-content: center;
+  }
+
+  .flex-container-items-flex {
+    flex: 1 1 auto;
+  }
+
+  /* Header Styles */
+
+  /* Main Styles */
+
+  /* Footer Styles */
+}

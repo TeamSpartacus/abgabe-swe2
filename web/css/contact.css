@@ -1,0 +1,55 @@
+.accordion {
+  background-color: #e0e0e0;
+  cursor: pointer;
+  padding: 18px;
+  margin: 16px auto 0 auto;
+  display: block;
+  width: 75%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+}
+.accordion:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  font-size: 24px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  font-weight: bolder;
+}
+
+.accordion:hover {
+  background-color: #cccccc;
+}
+
+.panel {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #eeeeee;
+  font-size: 24px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+p {
+  padding: 18px;
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+h2 {
+  text-align: center;
+  color: whitesmoke;
+}
+div {
+  text-align: center;
+  font-size: 1.1rem;
+  color: whitesmoke;
+}

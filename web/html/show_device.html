@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geräte</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/show_device.css" />
+  </head>
+  <body>
+    <header
+      class="flex-container-row flex-container-items-center flex-container-items-center-justify-space-between"
+    >
+      <img
+        src="../images/AWI_WortBildmarke_Weiss_RGB.png"
+        alt="Logo"
+        class="header-logo"
+      />
+      <div class="gap">
+        <a href="./table_devices.html" class="a-nostyle padding a-button"
+          >Übersicht</a
+        >
+        <a href="./reserve.html" class="a-nostyle padding a-button"
+          >Reservierung</a
+        >
+      </div>
+      <div class="flex-container-row gap">
+        <a href="./login.html" class="a-nostyle padding a-button">Login</a>
+        <img
+          src="../images/test_picture.jpeg"
+          class="header-profile-pic"
+          alt="PF-Bild"
+        />
+      </div>
+    </header>
+    <main
+      class="flex-container-table flex-container-items-center flex-container-items-center-justify"
+    >
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Ganzer Name</th>
+          <th>Kurz Name</th>
+          <th>Aufgabe</th>
+          <th>Modelnummer</th>
+          <th>Registriernummer</th>
+          <th>Hersteller</th>
+          <th>Letzte Wartung</th>
+          <th>Standort</th>
+          <th>Benutzer</th>
+          <th>Erstellt</th>
+          <th>Geupdated</th>
+          <th>Status</th>
+          <th>Reserviert Von</th>
+          <th>Reserviert Bis</th>
+        </tr>
+        <tbody id="tablebody"></tbody>
+      </table>
+
+      <br />
+      <div>
+        <form id="reserve-form" class="flex-container-row flex-container-date">
+          <div>
+            <p>Raum</p>
+            <input type="text" id="location" />
+          </div>
+          <div>
+            <p>Anfang</p>
+            <input type="date" id="res-start" />
+          </div>
+          <div>
+            <p>Ende</p>
+            <input type="date" id="res-end" />
+          </div>
+          <button type="submit">Reservierung Prüfen</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer-center">
+      <a href="./contact.html" class="margin-top padding a-button a-nostyle"
+        >Kontakt</a
+      >
+    </footer>
+    <script src="../js/show_device.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- Global JS -->
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-lock -->
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form id="login-form" name="myLoginForm">
+            <h2>Login</h2>
+            <div class="inputbox">
+              <i class="fa fa-file"></i>
+              <input type="email" id="email" required name="email" />
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <i class="fa fa-lock"></i>
+              <input type="password" id="password" required name="password" />
+              <label for="">Passwort</label>
+            </div>
+            <button type="submit">Log In</button>
+            <div class="forget">
+              <label for=""
+                ><a href="forgetpwd.html">Passwort vergessen?</a></label
+              >
+            </div>
+            <div class="register">
+              <p><a href="register.html">Kein Account? </a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="../js/login.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- Global JS -->
+  </body>
+</html>

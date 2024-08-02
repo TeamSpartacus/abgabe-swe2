@@ -1,0 +1,261 @@
+:root {
+  /* Global Color Plate */
+  --main-bg-color: #f4f4f4;
+  --main-text-color: #333;
+  --main-link-color: #007bff;
+  --main-link-hover-color: #0056b3;
+  --main-border-color: #ccc;
+  --awi-blue: #00abe8;
+  --awi-dark-blue: #003e6e;
+
+  /* Global Size Plate */
+  --main-height: 10%;
+  --main-height-main: 80%;
+  --main-width: 100%;
+
+  /* Global Design Plate */
+  --main-spacing: 20px;
+  --main-border-radius: 5px;
+  --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --main-transition: 0.3s;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: linear-gradient(to right, var(--awi-blue), var(--awi-dark-blue));
+  color: var(--main-text-color);
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Header Main Footer */
+
+header,
+footer {
+  height: var(--main-height);
+  /*     background-color: var(--awi-dark-blue); */
+  background: linear-gradient(
+    to left,
+    var(--awi-blue),
+    var(--awi-dark-blue),
+    var(--awi-dark-blue)
+  );
+}
+
+.header-logo:hover {
+  background: var(--awi-blue);
+  transform: rotate(540deg);
+}
+
+main {
+  height: var(--main-height-main);
+}
+
+header,
+main,
+footer {
+  width: var(--main-width);
+}
+
+/* Place Containers */
+
+.gap {
+  gap: 15px;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-container-column {
+  display: flex;
+}
+
+/* Flexbox Attributes */
+
+.flex-container-items-center {
+  align-items: center;
+}
+
+.flex-container-items-center-justify {
+  justify-content: center;
+}
+
+.flex-container-items-center-justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-container-items-center-justify-space-around {
+  justify-content: space-around;
+}
+
+.flex-container-items-center-justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-container-items-flex {
+  flex: 1 1 auto;
+}
+
+/* Header Styles */
+
+.header-logo {
+  height: 100%;
+}
+
+.header-profile-pic {
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Main Styles */
+
+/* Footer Styles */
+
+.footer-center {
+  text-align: center;
+}
+
+/*###################################################################
+#                                                                   #
+#                       Genral behaviors                            #
+#                                                                   #
+####################################################################*/
+
+.scrollbar {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/*###################################################################
+#                                                                   #
+#                       Genral Item Styles                          #
+#                                                                   #
+####################################################################*/
+
+/* a tag styles */
+
+.a-nostyle {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--main-link-color);
+  color: white;
+  border: none;
+  border-radius: var(--main-border-radius);
+  cursor: pointer;
+}
+
+.a-button:hover {
+  background: var(--main-link-hover-color);
+  transition: var(--main-transition);
+  /*     transform: rotate(360deg); */
+}
+
+/* ul tag styles */
+
+.list-nostyle {
+  list-style: none;
+}
+
+/* padding */
+
+.padding {
+  padding: var(--main-spacing);
+}
+
+.padding-top {
+  padding-top: var(--main-spacing);
+}
+
+.padding-bottom {
+  padding-bottom: var(--main-spacing);
+}
+
+.padding-left {
+  padding-left: var(--main-spacing);
+}
+
+.padding-right {
+  padding-right: var(--main-spacing);
+}
+
+/* margin */
+
+.margin {
+  margin: var(--main-spacing);
+}
+
+.margin-top {
+  margin-top: var(--main-spacing);
+}
+
+.margin-bottom {
+  margin-bottom: var(--main-spacing);
+}
+Text Colors .margin-left {
+  margin-left: var(--main-spacing);
+}
+
+.margin-right {
+  margin-right: var(--main-spacing);
+}
+
+/*###################################################################
+#                                                                   #
+#                       Shadows                                     #
+#                                                                   #
+####################################################################*/
+
+.shadow {
+  box-shadow: var(--main-box-shadow);
+}
+
+.shadow-hover:hover {
+  box-shadow: var(--main-box-shadow);
+}
+
+/*###################################################################
+#                                                                   #
+#                       Text Colors                                 #
+#                                                                   #
+####################################################################*/
+
+.text-primary {
+  color: var(--main-text-color);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-awi-blue {
+  color: var(--awi-blue);
+}
+
+.text-awi-dark-blue {
+  color: var(--awi-dark-blue);
+}
+
+/* Testing Properties */
+
+.test {
+  background-color: red;
+}

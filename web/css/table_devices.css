@@ -1,0 +1,18 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  align-items: center;
+}
+
+td,
+th {
+  color: whitesmoke;
+  border: 1px solid #ffffff;
+  text-align: center;
+  padding: 8px;
+}
+
+#tablebody:hover {
+  cursor: pointer;
+}
